@@ -128,7 +128,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                                 .snippet("Here is my Location")
                                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.ash))
                         )
-                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 14f))
+                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 12f))
 
                         //show Pokemon
                         for(newPokemon in listPokemon.iterator()){
@@ -160,6 +160,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     var listPokemon = ArrayList<Pokemon>()
     private fun loadPokemon(){
         listPokemon.add(Pokemon(R.drawable.p1,"Pikachu","here is the pikachu",55.0,37.3441, -122.2861)) //La Honda, CA 94020, USA
-        listPokemon.add(Pokemon(R.drawable.p3,"Chikorita","here is the chikorita",33.5,37.40,-122.4))
+        listPokemon.add(Pokemon(R.drawable.p3,"Chikorita","here is the chikorita",33.5,37.40,-122.2861))
     }
 }
